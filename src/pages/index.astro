@@ -7,11 +7,11 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 <Base title="Blog">
-  <h1>Blog</h1>
+  <h1>ʕ •ᴥ•ʔ Blog</h1>
   <ul>
     {posts.map((post) => (
       <li>
-        <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+        <a href={`/blog/${post.slug}`}>ʕ •ᴥ•ʔ {post.data.title}</a>
         <time datetime={post.data.date.toISOString()}>
           {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </time>
